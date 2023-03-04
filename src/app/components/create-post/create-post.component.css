@@ -1,0 +1,50 @@
+.text__newpost {
+  text-align: center;
+}
+
+.form__container {
+  padding: 12px;
+  text-align: center;
+}
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid aliceblue;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  width: 80%;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 80%;
+  resize: vertical;
+  padding: 12px;
+  border-radius: 12px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 150px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn__container {
+  margin-top: 12px;
+}
+
+.btn {
+  background: rgb(250, 202, 188);
+  text-decoration: none;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(136, 136, 136);
+  padding: 12px 24px;
+}

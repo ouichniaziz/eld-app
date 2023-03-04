@@ -1,0 +1,29 @@
+<h1 class="text__newpost">Create new Post!</h1>
+
+<div class="form__container">
+  <form
+    class="form__content"
+    #createPost="ngForm"
+    (ngSubmit)="onSubmit(createPost.value)"
+  >
+    <div>
+      <input type="text" name="title" placeholder="Title" ngModel />
+    </div>
+    <div>
+      <input type="text" name="author" placeholder="Author" ngModel />
+    </div>
+    <div>
+      <textarea
+        name="content"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Content"
+        ngModel
+      ></textarea>
+    </div>
+    <div class="btn__container">
+      <button class="btn" type="submit">Add</button>
+    </div>
+  </form>
+</div>

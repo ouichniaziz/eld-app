@@ -1,0 +1,30 @@
+<h1 class="blog__title">Blog !</h1>
+<div class="btn__container">
+  <a class="btn" routerLink="/new-post">Create</a>
+</div>
+<div class="blogs-list">
+  <ng-container *ngFor="let post of posts">
+    <div
+      (click)="openPostDetails(post.id)"
+      class="blog"
+      [style.border-color]="
+        post.upvote > post.downvote
+          ? 'rgb(189, 255, 43)'
+          : post.upvote < post.downvote
+          ? 'rgb(255, 120, 93)'
+          : 'rgb(175, 175, 175)'
+      "
+    >
+      <h3>{{ post.title }}</h3>
+      <div class="info__container">
+        <div class="vote upvote">{{ post.author }} ≈≈</div>
+        <div class="vote upvote">{{ post.upvote }} upvotes</div>
+        <div class="vote upvote">{{ post.downvote }} downvotes</div>
+      </div>
+      <p>{{ post.content.slice(0, 50) }} ...</p>
+    </div>
+  </ng-container>
+  <h3 class="text__noposts" *ngIf="posts?.length === 0">
+    Create your first Blog Post :)
+  </h3>
+</div>

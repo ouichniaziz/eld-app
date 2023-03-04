@@ -1,0 +1,55 @@
+.blog__title {
+  text-align: center;
+}
+
+.btn__container {
+  text-align: center;
+}
+
+.blogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn {
+  background: rgb(250, 202, 188);
+  text-decoration: none;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(136, 136, 136);
+  padding: 12px 24px;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+  padding-top: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(175, 175, 175);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.blog:hover {
+  background-color: rgb(136, 136, 136);
+}
+
+.info__container {
+  display: flex;
+  gap: 4px;
+}
+
+.vote {
+  color: beige;
+}
+
+.text__noposts {
+  text-align: center;
+}

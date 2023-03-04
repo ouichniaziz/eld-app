@@ -1,0 +1,19 @@
+<div class="post__container">
+  <h1>{{ post?.title }}</h1>
+  <h4>{{ post?.author }}</h4>
+  <div class="btn__container">
+    <button (click)="handleUpVote(post?.id)" class="btn upbtn">
+      {{ upvotes }} upvotes
+    </button>
+    <button (click)="handleDownVote(post?.id)" class="btn upvote">
+      {{ downvotes }} downvotes
+    </button>
+  </div>
+  <p class="post-content">{{ post?.content }}</p>
+
+  <div class="btn__container">
+    <a class="btn" routerLink="/">Go to Blog!</a>
+  </div>
+</div>
+
+
